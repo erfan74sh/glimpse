@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+		/>
+		<!-- Bootstrap css -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+			crossorigin="anonymous"
+		/>
+		<!-- external css -->
+		<link href="./build/stylesheet2.css" rel="stylesheet" />
+
+		<link rel="icon" href="./img/favicon.png" sizes="16*16" />
+		<title>Glimpse</title>
+	</head>
+	<body>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<img src="./img/logo.png" alt="glimpse" />
+						<form>
+							<input type="text" placeholder="Username" />
+							<input type="password" placeholder="Password" />
+							<div>
+								<input type="text" placeholder="Name" />
+								<input type="text" placeholder="Lastname" />
+							</div>
+							<div>
+								<input type="text" placeholder="University" />
+								<input type="email" placeholder="Email" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button">Register in Glimpse</button>
+						<p>Already have an account? <a href="#">Login</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="logo-div">
+				<a href="https://www.google.com/" target="_blank"
+					><img src="./img/logo.png" alt="glimpse"
+				/></a>
+			</div>
+			<div class="nav-lists">
+				<ul>
+					<li class="nav-list">
+						<a class="active" href="" target="_blank">home</a>
+					</li>
+					<li class="nav-list"><a href="" target="_blank">calculate</a></li>
+					<li class="nav-list"><a href="" target="_blank">papers</a></li>
+					<li class="nav-list"><a href="" target="_blank">about us</a></li>
+				</ul>
+			</div>
+			<div class="nav-user">
+				<div class="user" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<span id="user-name">name</span>
+					<span id="user-lastname">lastname</span>
+				</div>
+				<div class="icon-div"><i class="bi bi-person-lines-fill"></i></div>
+				<div class="credit-div">
+					<span id="credit-left">1</span>
+					<span>credit left</span>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="content">
+				<div id="estimation-to-process-div" class="estimation-flex-col">
+					<h4>estimation to process</h4>
+					<div class="flex-row estimation">
+						<div class="warning-low-credit">
+							<h3>your credit is low!</h3>
+							<button type="submit">charge here</button>
+						</div>
+						<div class="estimation-items">
+							<div class="estimation-item">structure</div>
+							<div class="estimation-item">energy</div>
+							<div class="estimation-item">IEQ</div>
+						</div>
+					</div>
+				</div>
+				<div id="estimated-div" class="estimation-flex-col">
+					<h4>estimated</h4>
+					<div class="flex-row">
+						<div class="estimated-item">
+							<span class="estimated-type">structure</span>
+							<span class="estimated-date">jun 20</span>
+						</div>
+						<div class="estimated-item">
+							<span class="estimated-type">structure</span>
+							<span class="estimated-date">jun 15</span>
+						</div>
+						<div class="estimated-item">
+							<span class="estimated-type">energy</span>
+							<span class="estimated-date">jun 20</span>
+						</div>
+						<div class="estimated-item">
+							<span class="estimated-type">IEQ</span>
+							<span class="estimated-date">jun 10</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="./img/side-image.png" alt="glimpse" />
+		</main>
+		<!-- Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+			crossorigin="anonymous"
+		></script>
+		<!-- external js -->
+		<script src="./js2.js"></script>
+	</body>
+</html>
