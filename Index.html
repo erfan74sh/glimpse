@@ -3,11 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="Style Sheet.css" />
+		<link rel="stylesheet" href="./build/stylesheet.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
 			rel="stylesheet"
 		/>
 		<script
@@ -25,29 +28,26 @@
 			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
 			crossorigin="anonymous"
 		/>
+		<link rel="icon" href="./img/favicon.png" sizes="16*16" />
+		<title>Document</title>
 	</head>
 	<body>
 		<nav id="first-nav">
-			<div class="logo-div">
-				<a href="https://www.google.com/" target="_blank"
-					><img src="./logo.png" alt="glimpse"
-				/></a>
-			</div>
-			<div class="nav-lists">
-				<ul>
-					<li class="nav-list">
-						<a class="active" href="" target="_blank">home</a>
-					</li>
-					<li class="nav-list"><a href="" target="_blank">calculate</a></li>
-					<li class="nav-list"><a href="" target="_blank">papers</a></li>
-					<li class="nav-list"><a href="" target="_blank">about us</a></li>
-				</ul>
-			</div>
+			<!-- <div class="nav-lists"> -->
+			<ul>
+				<li>
+					<a class="active" href="#" target="_blank">home</a>
+				</li>
+				<li><a href="#" target="_blank">calculate</a></li>
+				<li><a href="#" target="_blank">papers</a></li>
+				<li><a href="#" target="_blank">about us</a></li>
+			</ul>
+			<!-- </div> -->
 		</nav>
 		<nav id="second-nav">
 			<div class="logo-div">
 				<a href="https://www.google.com/" target="_blank"
-					><img src="./logo.png" alt="glimpse"
+					><img src="./img/logo.png" alt="glimpse"
 				/></a>
 			</div>
 			<div class="nav-lists">
@@ -62,8 +62,12 @@
 			</div>
 		</nav>
 		<header>
-			<img src="./header-image.png" alt="header image" id="header-image" />
-			<button type="button">Calculate Now!</button>
+			<img src="./img/header-image.png" alt="header image" />
+			<div id="title-div">
+				<h1>ابزاری برای تمام فصول</h1>
+				<button type="button">Calculate Now!</button>
+			</div>
+
 			<div id="glimpse-div">
 				<h5>Glimpse</h5>
 				<p>
@@ -120,26 +124,21 @@
 				<div>
 					<h3>number of simulations</h3>
 					<div id="simulation-data">
-						<span>
+						<span id="structure">
 							<p>structure</p>
 							<h4>+7500</h4>
 						</span>
-						<span>
+						<span id="energy">
 							<p>energy</p>
 							<h4>+5800</h4>
 						</span>
-						<span>
-							<p>school</p>
+						<span id="ieq">
+							<p>IEQ</p>
 							<h4>+5900</h4>
 						</span>
 					</div>
 				</div>
 				<!-- <img src="./Untitled-1.png" alt="image" /> -->
-			</div>
-			<div id="simulation-description-div">
-				<div class="simulation-description">test</div>
-				<div class="simulation-description">test</div>
-				<div class="simulation-description">test</div>
 			</div>
 			<div id="pricing-plans-main-div">
 				<div id="pricing-plans-header">
@@ -169,7 +168,7 @@
 						</div>
 						<div class="description-div">
 							<div class="description">
-								<h3 class="des-title">basic</h3>
+								<h3 class="des-title">standard</h3>
 								<p class="des">
 									15 Calculation<br />20 Revision<br />Numerical Results<br />
 									Simulation <br />Rhino and Revit<br />
@@ -186,7 +185,7 @@
 						</div>
 						<div class="description-div">
 							<div class="description">
-								<h3 class="des-title">basic</h3>
+								<h3 class="des-title">business</h3>
 								<p class="des">
 									30 Calculation<br />
 									45 Revision <br />Numerical Results<br />
@@ -201,31 +200,8 @@
 				</div>
 			</div>
 			<div id="slider"></div>
-			<div id="about-div">
-				<div id="about-text">
-					<p>
-						Civil engineering is a professional engineering discipline that
-						deals with the design, construction, and maintenance of the physical
-						and naturally built environment, including public works such as
-						roads, bridges, canals, dams, airports, sewerage systems, pipelines,
-						structural components of buildings, and railways.
-					</p>
-					<p>
-						Civil engineering is traditionally broken into a number of
-						sub-disciplines. It is considered the second-oldest engineering
-						discipline after military engineering, and it is defined to
-						distinguish non-military engineering from military engineering.
-						Civil engineering can take place in the public sector from municipal
-						public works departments through to federal government agencies, and
-						in the private sector from locally based firms to global Fortune 500
-						companies.
-					</p>
-				</div>
-				<div id="about-logo">
-					<img src="./beheshti-logo.png" alt="shahid beheshti university" />
-				</div>
-			</div>
-			<div id="styled-hr-div"><div id="styled-hr"></div></div>
+
+			<div id="styled-hr-div"><div></div></div>
 			<div id="contact-us-div">
 				<div id="contact-us-information">
 					<h3>want to talk with us?</h3>
@@ -252,10 +228,10 @@
 					<input type="text" placeholder="Message" />
 				</div>
 			</div>
-			<div id="footer-image"><img src="./footer-image.png" /></div>
+			<div id="footer-image"><img src="./img/footer-image.png" /></div>
 		</main>
 		<footer>
-			<div id="footer-logo"><img src="./logo.png" alt="glimpse" /></div>
+			<div id="footer-logo"><img src="./img/logo.png" alt="glimpse" /></div>
 			<p>designed by glimpse team c</p>
 		</footer>
 		<script
