@@ -140,6 +140,7 @@ main {
 			.estimation {
 				justify-content: space-evenly;
 				height: 300px;
+				padding: 1.4rem 5rem;
 				font-weight: 500;
 				.warning-low-credit {
 					display: flex;
@@ -174,10 +175,25 @@ main {
 					width: 100%;
 					.estimation-item {
 						display: flex;
+						flex-direction: column;
 						align-items: center;
 						justify-content: center;
-						min-width: 20%;
-						padding: 0.6rem;
+						height: 200px;
+						min-width: 200px;
+						padding: 1rem;
+						border-radius: 4rem;
+						background-color: #cce7e9;
+						box-shadow: 10px 10px 20px #b6cecf, -10px -10px 20px #d5eeee;
+						text-decoration: none;
+						img {
+							width: 60%;
+							height: auto;
+							margin: 0;
+						}
+						span {
+							color: #6b6b6b;
+							margin-top: 1rem;
+						}
 					}
 				}
 				.hidden {
