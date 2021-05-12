@@ -253,7 +253,7 @@ main #number-of-simulation-div > div {
   align-items: center;
   justify-content: center;
   font-size: 18pt;
-  padding-bottom: 70px;
+  padding-bottom: 85px;
 }
 main #number-of-simulation-div > div #simulation-data {
   width: 100%;
@@ -297,7 +297,7 @@ main #number-of-simulation-div > div h3 {
   font-size: 20pt;
 }
 main #pricing-plans-main-div {
-  padding: 20px 5% 75px 5%;
+  padding: 0 5% 75px 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,9 +390,11 @@ main #pricing-plans-main-div #pricing-plans-div p {
   margin: 0;
 }
 main #slider {
-  padding: 0 10%;
-  height: 500px;
+  padding: 7rem 10% 4rem 10%;
   background-color: #f2f4f7;
+}
+main #slider .my-pagination {
+  bottom: -2rem !important;
 }
 main #styled-hr-div {
   padding: 0 10%;

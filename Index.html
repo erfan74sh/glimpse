@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- external css -->
 		<link rel="stylesheet" href="./build/stylesheet.css" />
+		<!-- google fonts CDN -->
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
@@ -13,27 +15,36 @@
 			href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- fontawsome CDN -->
 		<script
 			src="https://kit.fontawesome.com/e96691685a.js"
 			crossorigin="anonymous"
 		></script>
-
+		<!-- Bootstrap icon CDN -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
 		/>
+		<!-- Bootstrap css cdn -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
 			crossorigin="anonymous"
 		/>
+		<!-- splide js CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+		<!-- splide css CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+		/>
 		<link rel="icon" href="./img/favicon.png" sizes="16*16" />
-		<title>Document</title>
+		<title>Glimpse</title>
 	</head>
+
 	<body>
 		<nav id="first-nav">
-			<!-- <div class="nav-lists"> -->
 			<ul>
 				<li>
 					<a class="active" href="#" target="_blank">home</a>
@@ -42,7 +53,6 @@
 				<li><a href="#" target="_blank">papers</a></li>
 				<li><a href="#" target="_blank">about us</a></li>
 			</ul>
-			<!-- </div> -->
 		</nav>
 		<nav id="second-nav">
 			<div class="logo-div">
@@ -61,13 +71,13 @@
 				</ul>
 			</div>
 		</nav>
+
 		<header>
 			<img src="./img/header-image.png" alt="header image" />
 			<div id="title-div">
 				<h1>ابزاری برای تمام فصول</h1>
 				<button type="button">Calculate Now!</button>
 			</div>
-
 			<div id="glimpse-div">
 				<h5>Glimpse</h5>
 				<p>
@@ -85,20 +95,6 @@
 		</header>
 
 		<main>
-			<!-- <div id="glimpse-div">
-				<h5>Glimpse</h5>
-				<p>
-					Civil engineering is a professional engineering discipline that deals
-					with the design, construction, and maintenance of the physical and
-					naturally built environment, including public works such as roads,
-					bridges, canals, dams, airports, sewerage systems, pipelines,
-					structural components of buildings, and railways.<br />
-					g from military engineering. Civil engineering can take place in the
-					public sector from municipal public works departments through to
-					federal government agencies, and in the private sector from locally
-					based firms to global Fortune 500 companies.
-				</p>
-			</div> -->
 			<div id="working-process-main-div">
 				<div id="working-process-title">
 					<h5>Work Frame</h5>
@@ -119,7 +115,6 @@
 					<span class="working-process-text">results</span>
 				</div>
 			</div>
-
 			<div id="number-of-simulation-div">
 				<div>
 					<h3>number of simulations</h3>
@@ -138,7 +133,6 @@
 						</span>
 					</div>
 				</div>
-				<!-- <img src="./Untitled-1.png" alt="image" /> -->
 			</div>
 			<div id="pricing-plans-main-div">
 				<div id="pricing-plans-header">
@@ -199,8 +193,28 @@
 					</div>
 				</div>
 			</div>
-			<div id="slider"></div>
-
+			<div id="slider">
+				<div
+					class="splide"
+					data-splide='{"type":"loop", "padding":"5rem", "autoplay": "true", "interval":3000, "pagination":"slider", "arrows":"slider" }'
+				>
+					<div class="splide__slider">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<img src="./img/slider-image-01.png" alte="" />
+								</li>
+								<li class="splide__slide">
+									<img src="./img/slider-image-01.png" alte="" />
+								</li>
+								<li class="splide__slide">
+									<img src="./img/slider-image-01.png" alte="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div id="styled-hr-div"><div></div></div>
 			<div id="contact-us-div">
 				<div id="contact-us-information">
@@ -230,14 +244,24 @@
 			</div>
 			<div id="footer-image"><img src="./img/footer-image.png" /></div>
 		</main>
+
 		<footer>
 			<div id="footer-logo"><img src="./img/logo.png" alt="glimpse" /></div>
 			<p>designed by glimpse team c</p>
 		</footer>
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
 			crossorigin="anonymous"
 		></script>
+		<!-- splide -->
+		<script>
+			new Splide(".splide", {
+				classes: {
+					pagination: "splide__pagination my-pagination",
+				},
+			}).mount();
+		</script>
 	</body>
 </html>

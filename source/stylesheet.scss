@@ -258,7 +258,7 @@ main {
 			align-items: center;
 			justify-content: center;
 			font-size: 18pt;
-			padding-bottom: 70px;
+			padding-bottom: 85px;
 			#simulation-data {
 				width: 100%;
 				display: flex;
@@ -303,7 +303,7 @@ main {
 		}
 	}
 	#pricing-plans-main-div {
-		padding: 20px 5% 75px 5%;
+		padding: 0 5% 75px 5%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -398,9 +398,11 @@ main {
 		}
 	}
 	#slider {
-		padding: 0 10%;
-		height: 500px;
+		padding: 7rem 10% 4rem 10%;
 		background-color: #f2f4f7;
+		.my-pagination {
+			bottom: -2rem !important;
+		}
 	}
 	#styled-hr-div {
 		padding: 0 10%;
