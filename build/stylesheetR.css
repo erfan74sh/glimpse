@@ -1,0 +1,44 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+* {
+  font-family: "Yantramanav", sans-serif;
+  color: #2f2f2f;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #f2f4f7 !important;
+}
+
+nav#second-nav {
+  height: 50px;
+  padding: 1rem 7vw 0 7vw;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #737373;
+  background-color: #fff;
+}
+nav#second-nav .logo-div img {
+  height: 40px;
+  width: auto;
+}
+nav#second-nav .nav-lists ul {
+  list-style: none;
+  margin: 0 !important;
+}
+nav#second-nav .nav-lists ul .nav-list .active {
+  text-decoration: underline !important;
+}
+nav#second-nav .nav-lists ul .nav-list a {
+  color: #2f2f2fa9;
+  transition: 300ms;
+}
+nav#second-nav .nav-lists ul .nav-list a:hover {
+  color: #2f2f2f;
+}
+
+/*# sourceMappingURL=stylesheetR.css.map */
