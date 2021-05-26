@@ -4,6 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- google fonts CDN -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fontawsome CDN -->
+		<script
+			src="https://kit.fontawesome.com/e96691685a.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- splide js CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+		<!-- splide css CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+		/>
 		<!-- Bootstrap CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -12,7 +34,7 @@
 			crossorigin="anonymous"
 		/>
 		<!-- external css -->
-		<link href="./build/stylesheetR.css" rel="stylesheet" />
+		<link href="./build/stylesheet1.css" rel="stylesheet" />
 		<!-- Bootstrap icons CDN -->
 		<link
 			rel="stylesheet"
@@ -21,11 +43,21 @@
 		<title>Glimpse</title>
 	</head>
 	<body>
+		<nav id="first-nav">
+			<ul>
+				<li>
+					<a class="active" href="#" target="_blank">home</a>
+				</li>
+				<li><a href="#" target="_blank">calculate</a></li>
+				<li><a href="#" target="_blank">papers</a></li>
+				<li><a href="#" target="_blank">about us</a></li>
+			</ul>
+		</nav>
 		<nav id="second-nav" class="navbar-expand-lg py-2 d-flex">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<button
-						class="navbar-toggler col-1"
+						class="navbar-toggler col-2 col-sm-1"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent"
@@ -33,12 +65,12 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+						<span class="navbar-toggler-icon fas fa-bars fa-lg"></span>
 					</button>
 					<div
 						class="
 							logo-div
-							col-10 col-lg-7 col-xl-8
+							col-8 col-sm-10 col-lg-7 col-xl-8
 							d-flex
 							justify-content-center justify-content-lg-start
 						"
@@ -62,16 +94,16 @@
 								justify-content-center justify-content-lg-between
 							"
 						>
-							<li class="nav-list mb-2">
+							<li class="nav-list my-2">
 								<a class="active" href="" target="_blank">home</a>
 							</li>
-							<li class="nav-list my-1">
+							<li class="nav-list my-2">
 								<a href="" target="_blank">calculate</a>
 							</li>
-							<li class="nav-list my-1">
+							<li class="nav-list my-2">
 								<a href="" target="_blank">papers</a>
 							</li>
-							<li class="nav-list my-1">
+							<li class="nav-list my-2">
 								<a href="" target="_blank">about us</a>
 							</li>
 						</ul>
@@ -79,11 +111,266 @@
 				</div>
 			</div>
 		</nav>
+
+		<header class="bg-white">
+			<img
+				class="img-fluid mx-auto px-3 d-block"
+				src="./img/header-image.png"
+				alt="header image"
+			/>
+			<div id="title-div">
+				<h1 class="mb-1 mb-md-3">ابزاری برای تمام فصول</h1>
+				<button class="rounded-pill" type="button">Calculate Now!</button>
+			</div>
+			<div id="glimpse-div">
+				<h5>Glimpse</h5>
+				<p>
+					Civil engineering is a professional engineering discipline that deals
+					with the design, construction, and maintenance of the physical and
+					naturally built environment, including public works such as roads,
+					bridges, canals, dams, airports, sewerage systems, pipelines,
+					structural components of buildings, and railways.<br />
+					g from military engineering. Civil engineering can take place in the
+					public sector from municipal public works departments through to
+					federal government agencies, and in the private sector from locally
+					based firms to global Fortune 500 companies.
+				</p>
+			</div>
+		</header>
+		<main>
+			<div id="working-process-main-div">
+				<div id="working-process-title">
+					<h5>Work Frame</h5>
+					<h1>Our Working Process</h1>
+				</div>
+				<div id="working-process" class="container-fluid">
+					<div
+						class="
+							row
+							justify-content-center
+							justify-content-sm-center
+							justify-content-md-between
+						"
+					>
+						<div class="col-6 col-sm-2 my-3 mx-sm-2 wps-div">
+							<span
+								class="working-process-span mx-auto"
+								id="simulation-icon"
+							></span>
+							<span class="working-process-text mx-auto d-block text-center"
+								>simulation</span
+							>
+						</div>
+						<div class="col-6 col-sm-2 my-3 mx-sm-2 wps-div">
+							<span
+								class="working-process-span mx-auto"
+								id="analysing-icon"
+							></span>
+							<span class="working-process-text mx-auto d-block text-center"
+								>analysing</span
+							>
+						</div>
+						<div class="col-6 col-sm-2 my-3 mx-sm-2 wps-div">
+							<span
+								class="working-process-span mx-auto"
+								id="building-data-set-icon"
+							></span>
+							<span class="working-process-text mx-auto d-block text-center"
+								>building data-set</span
+							>
+						</div>
+						<div class="col-6 col-sm-2 my-3 mx-sm-2 wps-div">
+							<span
+								class="working-process-span mx-auto"
+								id="machine-learning-icon"
+							></span>
+							<span class="working-process-text mx-auto d-block text-center"
+								>machine learning process</span
+							>
+						</div>
+						<div class="col-12 col-sm-2 my-3 mx-sm-2 wps-div">
+							<span
+								class="working-process-span mx-auto"
+								id="result-icon"
+							></span>
+							<span class="working-process-text mx-auto d-block text-center"
+								>results</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="number-of-simulation-div" class="text-center">
+				<div>
+					<h3>number of simulations</h3>
+					<div id="simulation-data" class="container">
+						<div
+							class="
+								row
+								col-md-12
+								d-flex
+								justify-content-center justify-content-md-evenly
+							"
+						>
+							<span id="structure" class="col-6 col-md-4">
+								<p>structure</p>
+								<h4>+7500</h4>
+							</span>
+							<span id="energy" class="col-6 col-md-4">
+								<p>energy</p>
+								<h4>+5800</h4>
+							</span>
+							<span id="ieq" class="col-6 col-md-4">
+								<p>IEQ</p>
+								<h4>+5900</h4>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="pricing-plans-main-div">
+				<div id="pricing-plans-header">
+					<h5>best pricing</h5>
+					<h1>our pricing plans</h1>
+				</div>
+				<div id="pricing-plans-div">
+					<div class="pricing-plan">
+						<div class="price-div">
+							<p class="price">12000</p>
+							<p class="unit">rls</p>
+						</div>
+						<div class="description-div">
+							<div class="description">
+								<h3 class="des-title">basic</h3>
+								<p class="des">
+									2 calculation<br />4 revision<br />numerical results
+								</p>
+							</div>
+							<button type="button">buy now</button>
+						</div>
+					</div>
+					<div class="pricing-plan">
+						<div class="price-div">
+							<p class="price">12000</p>
+							<p class="unit">rls</p>
+						</div>
+						<div class="description-div">
+							<div class="description">
+								<h3 class="des-title">standard</h3>
+								<p class="des">
+									15 Calculation<br />20 Revision<br />Numerical Results<br />
+									Simulation <br />Rhino and Revit<br />
+									Exports
+								</p>
+							</div>
+							<button type="button">buy now</button>
+						</div>
+					</div>
+					<div class="pricing-plan">
+						<div class="price-div">
+							<p class="price">12000</p>
+							<p class="unit">rls</p>
+						</div>
+						<div class="description-div">
+							<div class="description">
+								<h3 class="des-title">business</h3>
+								<p class="des">
+									30 Calculation<br />
+									45 Revision <br />Numerical Results<br />
+									Simulation <br />Rhino and Revit<br />
+									Grasshopper Exports<br />
+									Design Suggestions
+								</p>
+							</div>
+							<button type="button">buy now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider">
+				<div
+					class="splide"
+					data-splide='{"type":"loop", "padding":"1rem", "autoplay": "true", "interval":3000, "pagination":"slider", "arrows":"slider" }'
+				>
+					<div class="splide__slider">
+						<div class="splide__track">
+							<ul class="splide__list text-center">
+								<li class="splide__slide">
+									<img
+										src="./img/slider-image-01.png"
+										class="img-fluid"
+										alte=""
+									/>
+								</li>
+								<li class="splide__slide">
+									<img
+										src="./img/slider-image-01.png"
+										class="img-fluid"
+										alte=""
+									/>
+								</li>
+								<li class="splide__slide">
+									<img
+										src="./img/slider-image-01.png"
+										class="img-fluid"
+										alte=""
+									/>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="styled-hr-div"><div></div></div>
+			<div id="contact-us-div">
+				<div id="contact-us-information">
+					<h3>want to talk with us?</h3>
+					<span>
+						<i class="far fa-envelope"></i>
+						<a>contact@glimpse.com</a>
+					</span>
+					<span>
+						<i class="bi bi-telephone"></i>
+						<p>0913-333-7004</p>
+					</span>
+				</div>
+				<div id="contact-us-links">
+					<h3>our company</h3>
+					<div>
+						<a href="#">about us</a>
+						<a href="#">contact us</a>
+						<a href="#">our technology</a>
+						<a href="#">latest paper</a>
+					</div>
+				</div>
+				<div id="contact-us-forms">
+					<input type="email" placeholder="Email Address" />
+					<input type="text" placeholder="Message" />
+				</div>
+			</div>
+			<div id="footer-image">
+				<img src="./img/footer-image.png" />
+			</div>
+		</main>
+		<footer>
+			<div id="footer-logo"><img src="./img/logo.png" alt="glimpse" /></div>
+			<p>designed by glimpse team c</p>
+		</footer>
+
 		<!-- Bootstrap Bundle with Popper -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- splide -->
+		<script>
+			new Splide(".splide", {
+				classes: {
+					pagination: "splide__pagination my-pagination",
+				},
+			}).mount();
+		</script>
 	</body>
 </html>

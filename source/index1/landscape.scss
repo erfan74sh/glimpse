@@ -1,0 +1,51 @@
+@media only screen and (orientation: landscape) and (max-width: 768px) {
+	header {
+		img {
+			margin-bottom: -115vh;
+			width: 80%;
+		}
+		#title-div {
+			margin-bottom: 50vh;
+		}
+		#glimpse-div {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+	main {
+		#working-process-main-div {
+			width: 100%;
+			padding: 0 2rem;
+			.wps-div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: start;
+				flex-wrap: wrap;
+				// margin: 0 0.5rem !important;
+			}
+			.working-process-span {
+				width: 110px !important;
+				height: 110px !important;
+				margin-bottom: 1rem;
+			}
+			#result-icon {
+				width: 110px !important;
+				height: 110px !important;
+				background-color: #f2f4f7 !important;
+			}
+		}
+		#pricing-plans-div {
+			flex-direction: row !important;
+			justify-content: center !important;
+			flex-wrap: wrap;
+			.pricing-plan {
+				width: 40% !important;
+				margin-left: 1rem !important;
+				margin-right: 1rem !important;
+			}
+		}
+	}
+}
+
+// @media only screen and (orientation: landscape) and (min-width:) (max-width: 768px)
