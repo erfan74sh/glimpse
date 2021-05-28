@@ -466,26 +466,6 @@ footer p {
   color: #5f5f5f;
 }
 
-@media only screen and (min-width: 992px) {
-  header img {
-    margin-bottom: -80vh;
-  }
-  header button {
-    height: 4rem;
-    width: 10rem;
-    border-radius: 35px;
-    background-color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #508387;
-    border: none;
-    transition: ease-out 0.3s;
-  }
-  header button:hover {
-    box-shadow: inset 400px 0 0 0 #508387;
-    color: #fff;
-  }
-}
 @media only screen and (orientation: landscape) and (max-width: 768px) {
   header img {
     margin-bottom: -115vh;
@@ -598,7 +578,87 @@ footer p {
     flex: 6;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) and (orientation: landscape) {
+  #second-nav {
+    padding: 1.5rem 6rem !important;
+  }
+  #second-nav .nav-lists {
+    border: none !important;
+  }
+
+  header img {
+    width: 80%;
+    margin: 0 auto -45vh auto;
+  }
+  header #title-div {
+    margin-bottom: 120px;
+  }
+  header #glimpse-div {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #working-process .working-process-span {
+    width: 130px !important;
+    height: 130px !important;
+    background-color: #f2f4f7 !important;
+  }
+
+  #number-of-simulation-div {
+    height: 500px;
+    margin-top: -100px;
+    padding-top: 170px;
+  }
+
+  #pricing-plans-div {
+    flex-direction: row !important;
+  }
+  #pricing-plans-div .pricing-plan {
+    width: 31% !important;
+  }
+
+  #slider {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  #styled-hr-div {
+    margin-bottom: 100px;
+    padding: 0 10%;
+    background-color: #f2f4f7;
+  }
+  #styled-hr-div div {
+    background-color: #0072bc;
+    height: 2px;
+    padding: 0 15%;
+  }
+
+  #contact-us-div {
+    width: 90%;
+    margin: 3rem auto;
+    flex-direction: row;
+  }
+  #contact-us-div #contact-us-information {
+    flex: 4;
+    flex-wrap: wrap;
+    order: 1;
+  }
+  #contact-us-div #contact-us-links {
+    flex: 3;
+    order: 2;
+  }
+  #contact-us-div #contact-us-forms {
+    margin: 0;
+    flex: 5;
+    order: 3;
+  }
+  #contact-us-div h3 {
+    margin-top: 0 !important;
+    text-align: initial !important;
+    border: none !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
   * {
     font-family: "Yantramanav", sans-serif;
     color: #2f2f2f;
@@ -612,7 +672,6 @@ footer p {
 
   body {
     margin: 0;
-    padding: 0 10vw;
     background-color: #f2f4f7 !important;
   }
 
@@ -621,11 +680,10 @@ footer p {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 0 7vw;
+    padding: 0 8vw;
     font-weight: 400;
     font-size: 1.2rem;
     background-color: #464646;
-    margin: 0 -10vw;
   }
   nav#first-nav ul {
     display: flex;
@@ -658,7 +716,6 @@ footer p {
     font-size: 1.2rem;
     color: #737373;
     background-color: #fff;
-    margin: 0 -10vw;
   }
   nav#second-nav .logo-div {
     flex: 8;
@@ -693,7 +750,6 @@ footer p {
 
   header {
     position: relative;
-    margin: 0 -10vw;
     background-color: #fff;
     text-align: initial;
   }
@@ -755,13 +811,15 @@ footer p {
   }
 
   main #working-process-main-div {
-    padding: 0 5vw;
+    padding: 0 15vw;
     background-color: #f2f4f7;
   }
   main #working-process-main-div #working-process-title {
-    margin: 0 -10vw;
+    position: relative;
+    margin: 0 -15vw;
     padding: 80px 0 0 0;
     background-color: #fff;
+    z-index: 1000000000000;
   }
   main #working-process-main-div #working-process-title h5 {
     margin: 10px 0;
@@ -848,6 +906,7 @@ footer p {
     justify-content: center;
     width: 100%;
     height: 600px;
+    padding: 0 10vw;
     background-image: url(../img/Untitled-1.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -908,7 +967,7 @@ footer p {
     font-size: 20pt;
   }
   main #pricing-plans-main-div {
-    padding: 0 5% 75px 5%;
+    padding: 0 15vw 75px 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1002,14 +1061,14 @@ footer p {
     margin: 0;
   }
   main #slider {
-    padding: 7rem 10% 4rem 10%;
+    padding: 7rem 20% 4rem 20%;
     background-color: #f2f4f7;
   }
   main #slider .my-pagination {
     bottom: -2rem !important;
   }
   main #styled-hr-div {
-    padding: 0 10%;
+    padding: 0 20%;
     background-color: #f2f4f7;
   }
   main #styled-hr-div div {
@@ -1021,7 +1080,7 @@ footer p {
     position: relative;
     height: 170px;
     margin-top: 50px;
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1126,7 +1185,7 @@ footer p {
   }
   main #footer-image {
     display: block;
-    padding: 0 4%;
+    padding: 0 10%;
     background-color: #f2f4f7;
     margin-top: -200px;
     z-index: -1;
